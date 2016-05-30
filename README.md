@@ -4,7 +4,7 @@ This allows you to check and set up notifications for Global Entry enrollment ap
 
 Once setup, you can retrieve the soonest available appointment day with the following command:
 
-	phantomjs [--ssl-protocol=any] ge-cancellation-checker.phantom.js [-v | --verbose]
+	phantomjs --platform=offscreen [--ssl-protocol=any] ge-cancellation-checker.phantom.js [-v | --verbose]
 
 Similarly, if you only want to check to see if there is a sooner one than already scheduled, run:
 

@@ -71,7 +71,7 @@ Content-Type: text/html
 
 
 
-new_apt_str = check_output(['phantomjs', '%s/ge-cancellation-checker.phantom.js' % PWD]); # get string from PhantomJS script - formatted like 'July 20, 2015'
+new_apt_str = check_output(['phantomjs', '--platform', 'offscreen', '%s/ge-cancellation-checker.phantom.js' % PWD]); # get string from PhantomJS script - formatted like 'July 20, 2015'
 new_apt_str = new_apt_str.strip()
 
 try: new_apt = datetime.strptime(new_apt_str, '%B %d, %Y')
